@@ -1,29 +1,78 @@
-<!DOCTYPE html>
-<html lang="ja">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="theme-color" content="#000000">
-	<link rel="stylesheet" type="text/css" href="start/s_style.css" />
-</head>
+#video {
+  width: 100vw;
+  height: 100vh;
+}
 
-<body>
-	<video src="start/startview.mp4" id="video" autoplay muted></video>
-	<div>
-		<marquee behavior="alternate" direction="up" height="300" loop="8" scrollamount=17 style="width:75vw" id="text">
-			<marquee behavior="slide" scrollamount=27 id="slide">
-				&emsp;JavaScript
-			</marquee>
-		</marquee>
-	</div>
-		<article class="play pbtn">
-			<div class="shape-container">
-				<div class="shape">
-					<a href="tiping.html">
-					<img src="start/play.png" src="start/play.png" alt="tiping">
-				</a>
-			</div>
-			</div>
-		</article>
-</body>
+#text {
+  font-size: 6vw;
+  position: absolute;  
+  top: 10%;
+  left: 27%;
+  font-weight:bold;
+	color: #FFF;
+	text-shadow: 
+		0 0 0.20em #F06292,
+		0 0 0.25em #F06292,
+		0 0 0.30em #F06292,
+		0 0 0.55em #F06292;
+}
+
+.pbtn .shape {
+  opacity: 0;
+  animation: slide 2.8s  3s cubic-bezier(.64,-0.36,.1,1) ;
+  animation-fill-mode: forwards;
+}
+
+.pbtn .shape-container {
+  animation: diagonal 4.1s  2s cubic-bezier(.64,-0.36,.1,2) ;
+}
+
+@keyframes slide {
+  0%, 15% {
+    opacity: 0;
+    transform: translateX(30vw);
+  }
+  15%, 25% {
+    transform: translateX(30vw);
+    opacity: 1;
+  }
+  85%, 90% {
+    transform: translateX(0vw);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0vw);
+    opacity: 1;
+  }
+}
+
+@keyframes diagonal {
+  0%, 35% {
+    transform: none;
+  }
+  50%, 60% {
+    transform: skewX(-20deg);
+  }
+  90%, 100% {
+    transform: none;
+  }
+}
+
+.play {
+  width: 40vh;
+  height: 15vh;
+  position: absolute;
+  left: 58%;
+  top: 68%;
+  mix-blend-mode: hard-light;
+  animation-delay: 2s;
+}
+
+.shape {
+  width: 4em;
+  height: 4em;
+  animation-delay: 2s;
+}
+
+
