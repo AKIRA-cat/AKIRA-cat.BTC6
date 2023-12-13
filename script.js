@@ -8,7 +8,7 @@ const questions = [
   `function addTen(number){}`,
   'document.getElementsByClassName("deep")',
   'document.getElementsById("result")',
-  'bottun.addEventListener("click",function())',
+  'button.addEventListener("click",function())',
   `Mozilla Developer Network`,
   `for(let i = 0; i > 10; i++){}`,
   `for(const element of array){}`,
@@ -23,7 +23,7 @@ const explanations = [
   `htmlからクラス名deep「深い」を持つ要素を取得する
     クラスは複数ある為複数形Elements,配列に入る`,
   `htmlからid名result「結果」を持つ要素を取得する`,
-  `bottun「ボタン」がクリックされたら
+  `button「ボタン」がクリックされたら
     function「関数」を呼び出す`,
   `MDNはWEB開発技術者用の情報がたくさんある`,
   `同じ処理を10回繰り返す`,
