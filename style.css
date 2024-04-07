@@ -20,7 +20,7 @@ h1 {
   width: 98vw;
   height: 88vh;
   position: absolute;
-  top: 3vh;
+  top: 4vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,7 +28,7 @@ h1 {
 }
 
 .pointer {
-  font-size: 3vw;
+  font-size: 4vw;
   font-weight: bold;
   white-space: pre;
   color: rgba(251, 247, 250, 0);
