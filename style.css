@@ -176,10 +176,10 @@ body {
     0 0 0.55em rgb(6, 7, 19);
 }
 
-.scoreChild {
+/* .scoreChild {
   height: 100%;
 }
-
+ */
 #count {
   margin-top: 0vh;
 }
