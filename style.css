@@ -157,12 +157,12 @@ body {
 }
 
 .score {
-  font-size: 1vw;
+  font-size: 3vw;
   font-weight: bold;
   width: 10vw;
-  height: 3vh;
+  height: 4vh;
   position: absolute;
-  top: 73vh;
+  top: 75vh;
   left: 85vw;
   display: flex;
   flex-direction: column;
